@@ -48,13 +48,10 @@ function getFizzBuzz(num) {
  */
 function getFactorial(n) {
   let result = 1;
-  if (n !== 1) {
-    result = n * (n - 1);
-    n = n - 1;
-    getFactorial(n);
-  } else {
-    return result;
+  for (let i = 1; i <= n; i += 1) {
+    result *= i;
   }
+  return result;
 }
 
 
