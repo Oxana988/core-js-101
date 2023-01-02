@@ -211,7 +211,7 @@ function getTail(arr, n) {
  *    +'30,31,32,33,34'
  */
 function toCsvText(arr) {
-  return arr.toString().join('/n');
+  return arr.map((elem) => elem.toString()).join('\n');
 }
 
 /**
@@ -365,8 +365,9 @@ function sortDigitNamesByNumericOrder(arr) {
  *   [ -1, 1, -1, 1 ]      => 0
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
-function getItemsSum(/* arr */) {
-  throw new Error('Not implemented');
+function getItemsSum(arr) {
+  const result = 0;
+  return arr.reduce((sum, elem) => sum + elem, result);
 }
 
 /**
